@@ -1,0 +1,15 @@
+{
+    "ignoreTestFiles": [
+        "*.js",
+        "*.md"
+    ],
+    "testFiles": "**/*.feature",
+    "env": {
+        "tokenAuth":"",
+        "baseUrl":"",
+        "baseEnv":"",
+        "endpoint.token.general": "/authentication",
+        "endpoint.survey.questions": "spice/survey/company/questions"
+     }
+}
+
