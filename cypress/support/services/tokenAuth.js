@@ -6,7 +6,7 @@ const urlServiceSystem = Cypress.env('baseUrl') + Cypress.env('endpoint.token.ge
 
 class TokenAuth {
 
-    callGetTokenCip(bodyCalled) {
+    callGetTokenServiceUser(bodyCalled) {
         cy.log("URL SERVICE - ", urlServiceUser);
         cy.log("Body - ", bodyCalled);
         return cy.request({
@@ -17,7 +17,7 @@ class TokenAuth {
         })
     }
 
-    callGetTokenFap(bodyCalled) {
+    callGetTokenServiceManager(bodyCalled) {
         cy.log("URL SERVICE - ", urlServiceManager);
         cy.log("Body - ", bodyCalled);
         return cy.request({
@@ -28,7 +28,7 @@ class TokenAuth {
         })
     }    
 
-    callGetTokenServico(bodyCalled) {
+    callGetTokenServiceSystem(bodyCalled) {
         cy.log("URL SERVICE - ", urlServiceSystem);
         cy.log("Body - ", bodyCalled);
         return cy.request({
